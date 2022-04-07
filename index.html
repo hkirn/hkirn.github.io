@@ -1,15 +1,43 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="google-site-verification" content="qHOH6LF1NcMOvTTnSLb3ttQbtl2RlruCvRYxBTdQlSs" />
-  </head>
-<body>
-<h1>Github von Holger Kirn</h1>
-<a href="https://github.com/hkirn">Mein Git-Repo</a><br><br>
-  Ein einfacher Viewer für den Datensatz
-  <a href="https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-bahnhoefen">Barrierefreiheit an BW-Bahnhöfen</a> 
-  von
-  <a href="https://www.mobidata-bw.de/">MobiDataBW</a>:<br><br>
-<a href="https://github.com/hkirn/SimpleOpenDataViewerFx">zu Repo SimpleOpenDataViewerFX</a>
-</body>
-</html>
+<h1 id="simpleopendataviewerfx">SimpleOpenDataViewerFx</h1>
+<p>A Simple Viewer for Dataset &quot;bfrk-barrierefreiheit-an-bw-bahnhoefen&quot; from MobiDataBW/NVBW</p>
+<p>Direkt zum Projekt: <a href="https://github.com/hkirn/SimpleOpenDataViewerFx">https://github.com/hkirn/SimpleOpenDataViewerFx</a></p>
+<p>Sie wollen als Bahnnutzer ìn Baden-Württemberg sehen, wie der Bahnhof an Ihrem Zielort aussieht? Sie sind vielleicht in der Mobilität
+eingeschränkt und auf einen Aufzug und einen stufenfreien Zugang angewiesen? Oder Sie interessieren sich als Bahnfan für Bahnhöfe? 
+Sind Sie sogar Mitarbeiter der Bahn oder eines Verkehrsverbundes und wollen kurz nachschauen, wie jeder einzelne Bahnhof
+aussieht? Oder Sie sind Pendler und wollen wissen, wo Sie ihr Fahrrad oder ihr Auto abstellen können? Oder wo Sie
+unterwegs an ein Leihrad kommen?</p>
+<p>Auf MobiDataBW existiert dafür ein vollständiger Datensatz, dieser liegt aber in Tabellenform als CSV-Datei vor, und ist 
+für interessierte Menschen, die ihn kurz anschauen wollen, nur eingeschränkt geeignet. Diese Daten müssen also für den
+Menschen aufbereitet und gefiltert werden.</p>
+<p>Bei der Software &quot;SimpleOpenDataViewerFx&quot; handelt es sich um eine Software, die den Datensatz &quot;Barrierefreiheit an BW-Bahnhöfen&quot; 
+(<a href="https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-bahnhoefen">https://www.mobidata-bw.de/dataset/bfrk-barrierefreiheit-an-bw-bahnhoefen</a>) von &quot;MobiData BW&quot; herunterlädt und diesen visualisiert.</p>
+<p>Die Daten werden bei jedem Start der Software neu synchronisiert und die Bilder werden bei Bedarf nachgeladen, die Software ist also 
+auf eine dauerhafte Onlineverbindung angewiesen. Die Daten werden direkt von &quot;MobiDataBW&quot; heruntergeladen, es werden keine zusätzlichen
+Server oder Clouddienste eingesetzt.</p>
+<p>Für Windows wird ein ZIP-File mit allen erforderlichen Librarys zur Verfügung gestellt, auf anderen Betriebssystemen sollte die
+bereitgestellte jar-Datei ebenfalls einsetzbar sein. Das ist aber im Moment noch nicht getestet. Es wird Java in der Version 17 benötigt.</p>
+<p>Link zu Windows-Paket: <a href="https://github.com/hkirn/SimpleOpenDataViewerFx/releases/">https://github.com/hkirn/SimpleOpenDataViewerFx/releases/</a></p>
+<p>Aktuelle JAR können Sie direkt von der Build-Pipeline herunterladen: <a href="https://github.com/hkirn/SimpleOpenDataViewerFx/actions/workflows/maven.yml">https://github.com/hkirn/SimpleOpenDataViewerFx/actions/workflows/maven.yml</a></p>
+<p>Nach dem Start den benötigten Bahnhof auswählen, in der Suchfunktion können Sie nach Ortsnamen filtern. Bitte hierbei beachten, dass
+die Suchfunktion wirklich nur Ortsnamen berücksichtigt, statt z.B. &quot;Österfeld&quot; müssen Sie &quot;Stuttgart&quot; suchen.
+Nach der Auswahl des ersten Orts führt &quot;OpenDataViewerFx&quot; eine komplette Synchronisation der Daten durch, es werden ca. 2MB heruntergeladen
+und in eine nutzbare Datenstruktur umgewandelt. Dieser Vorgang kann je nach Bandbreite und Rechenleistung ca. 5-20 Sekunden dauern.</p>
+<p>Nach erfolgreicher Synchronisation können Sie mit den Buttons auf der linken Seite die benötigten Informationen auswählen. Auf der rechten
+Seite werden die Daten dargestellt. Je nach Auswahl sind mehrere Bilder und GPS-Positionen verfügbar.</p>
+<p>Bitte beachten Sie, dass der Datensatz im Moment nicht zu jedem Bahnhof Bilder enthält. Die Software zeigt Ihnen dann eine Karte von
+OpenStreetMaps mit der Position des gewählten Objekts an.</p>
+<p>Diese Software und der genutzte Datensatz können Fehler enthalten. Ich möchte darauf hinweisen, dass ich keinerlei Haftung übernehme.
+Diese Software ist noch in einem sehr frühen Stadium, es können noch Fehler vorhanden sein!</p>
+<p>Für mich ist das ganze eher ein Lernprojekt, da ich mich gerade zum Softwareentwickler weiter bilde. Diese Software kann
+selbstverständlich auch angepasst werden, es wäre beispielsweise eine Version speziell für Radfahrer möglich, die nur 
+B+R und Leihradanlagen enthält.</p>
+<p>Da diese Software komplett in Java entwickelt ist, wäre ein Großteil des Codes auch für Android nutzbar.</p>
+<p>Bei Fragen können Sie mich unter sodw@kirn-net.de erreichen.</p>
+<p>Bitte beachten Sie zusätzlich die Lizenzinformationen über die verwendeten Daten: 
+<a href="https://htmlpreview.github.io/?https://github.com/hkirn/SimpleOpenDataViewerFx/blob/main/src/main/resources/license.html">https://htmlpreview.github.io/?https://github.com/hkirn/SimpleOpenDataViewerFx/blob/main/src/main/resources/license.html</a></p>
+<p>Screenshots:
+<img src="https://github.com/hkirn/SimpleOpenDataViewerFx/raw/main/Screenshots/startscreen.png" alt="ScreenShot Startscreen">
+<img src="https://github.com/hkirn/SimpleOpenDataViewerFx/raw/main/Screenshots/bahnhofSelected.png" alt="ScreenShot Bahnhof gewählt">
+<img src="https://github.com/hkirn/SimpleOpenDataViewerFx/raw/main/Screenshots/haltesteigSelected.png" alt="ScreenShot Bahnsteig gewählt">
+<img src="https://github.com/hkirn/SimpleOpenDataViewerFx/raw/main/Screenshots/aufzugSelected.png" alt="ScreenShot Aufzug gewählt">
+<img src="https://github.com/hkirn/SimpleOpenDataViewerFx/raw/main/Screenshots/BuRSelected.png" alt="ScreenShot B+R gewählt"></p>
